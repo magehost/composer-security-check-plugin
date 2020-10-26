@@ -31,13 +31,10 @@
         "ext-curl": "*"
     },
     "require-dev": {
-        "composer/composer": "^1.6",
+        "composer/composer": "^2.0",
         "phpunit/phpunit": "^7.2"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.2-dev"
-        },
         "class": "FancyGuy\\Composer\\SecurityCheck\\SecurityCheckPlugin"
     }
 }

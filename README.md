@@ -13,13 +13,13 @@ Run these commands to see some sample behavior:
     mkdir insecure-project
     cd insecure-project
     composer init --name="insecure/project" --description="insecure project" -l MIT -n
-    composer require symfony/symfony:2.5.2
+    composer require 3f/pygmentize:1.0
     composer require fancyguy/composer-security-check-plugin
     composer audit
     composer audit --format=simple
     composer audit --format=json
     composer validate
-    composer require symfony/symfony --update-with-all-dependencies
+    composer require 3f/pygmentize --update-with-all-dependencies
     composer audit
 
 By default this tool uploads your `composer.lock` file to the [security.symfony.com](https://security.symfony.com/) webservice which uses the checks from https://github.com/FriendsOfPHP/security-advisories. 
