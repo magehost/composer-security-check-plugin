@@ -160,6 +160,9 @@ class SecurityCheckPlugin implements PluginInterface, Capable, EventSubscriberIn
         $im->addInstaller(new NoopInstaller);
 
         // TODO: Fake passes like in Installer::extractDevPackages() break things
+        //       Ideally we should have the local repository being used in the event
+        //       For now, blindly ignore exceptions. The noop installer throws only
+        //       when a package is not installed. We'll assume it is in another context
         try {
             $im->execute($localRepo, $operations);
         } catch (\Exception $e) {}
