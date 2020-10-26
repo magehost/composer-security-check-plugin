@@ -34,7 +34,7 @@ abstract class HttpChecker extends BaseChecker implements HttpCheckerInterface
 
         list($headers, $body) = $this->doHttpCheck($lock, $certFile);
 
-        if (!(preg_match('/X-Alerts: (\d+)/', $headers, $matches) || 2 == count($matches))) {
+        if (!(preg_match('/X-Alerts: (\d+)/i', $headers, $matches) || 2 == count($matches))) {
             throw new RuntimeException('The web service did not return alerts count.');
         }
 
@@ -59,7 +59,7 @@ abstract class HttpChecker extends BaseChecker implements HttpCheckerInterface
 
         unlink($tmplock);
 
-        if (!(preg_match('/X-Alerts: (\d+)/', $headers, $matches) || 2 == count($matches))) {
+        if (!(preg_match('/X-Alerts: (\d+)/i', $headers, $matches) || 2 == count($matches))) {
             throw new RuntimeException('The web service did not return alerts count.');
         }
 
