@@ -1,4 +1,4 @@
-# Security Check Plugin for Composer
+# Security Check Plugin for Composer 2.x
 
 For global install:
 
