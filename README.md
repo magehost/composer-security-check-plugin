@@ -2,11 +2,11 @@
 
 For global install:
 
-    composer global require fancyguy/composer-security-check-plugin
+    composer global require magehost/composer-security-check-plugin
 
 For project install:
 
-    composer require fancyguy/composer-security-check-plugin
+    composer require magehost/composer-security-check-plugin
 
 Run these commands to see some sample behavior:
 
@@ -14,7 +14,7 @@ Run these commands to see some sample behavior:
     cd insecure-project
     composer init --name="insecure/project" --description="insecure project" -l MIT -n
     composer require 3f/pygmentize:1.0
-    composer require fancyguy/composer-security-check-plugin
+    composer require magehost/composer-security-check-plugin
     composer audit
     composer audit --format=simple
     composer audit --format=json

@@ -1,5 +1,5 @@
 {
-    "name": "fancyguy/composer-security-check-plugin",
+    "name": "magehost/composer-security-check-plugin",
     "description": "Checks installed dependencies against SensioLabs security advisory database",
     "type": "composer-plugin",
     "license": "MIT",
@@ -14,7 +14,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/fancyguy/composer-security-check-plugin/issues"
+        "issues": "https://github.com/magehost/composer-security-check-plugin/issues"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
